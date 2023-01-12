@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fira Code', monospace;
+  border: none;
+}
+
+body {
+  background-color: #282C33;
+  color: white;
+}
+
+header {
+  margin-top: 63px;
+  margin-left: 510px;
+}
+
+header h1 {
+  margin-bottom: 28px;
+  font-size: 60px;
+}
+.text-green {
+  color: #95EBA8;
+}
+
+.bg-green {
+  background-color: #95EBA8;
+  padding: 12px 30px;
+  border-radius: 10px;
+}
+
+#currency {
+  background-color: rgba(217, 217, 217, 0.1);
+  width: 171px;
+  height: 48px;
+  border-radius: 10px;
+}
+
+#currency::placeholder {
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+#search {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+label {
+  font-size: 12px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.currency-box--items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.currency-box {
+  width: 900px;
+  height: 583px;
+  overflow-y: auto;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.06);
+  margin-top: 57px;
+  padding-top: 24px;
+  padding-bottom: 52px;
+  padding-left: 33px;
+  padding-right: 33px;
+}
+
+#currency-box--info {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.currency-item--value {
+  font-size: 13px;
+  color: #FFE713;
+}
+
+.currency-item {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  max-height: 44px;
+  padding: 12px 0;
+  padding-left: 8px;
+  padding-right: 20px;
+}
+
+#template {
+  display: none;
+}
