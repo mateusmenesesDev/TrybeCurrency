@@ -9,11 +9,16 @@
 body {
   background-color: #282C33;
   color: white;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 header {
+  margin: 0 auto;
   margin-top: 63px;
-  margin-left: 510px;
+  width: 834px;
 }
 
 header h1 {
@@ -47,13 +52,11 @@ header h1 {
   font-size: 20px;
 }
 
+input {
+  color: white;
+}
 label {
   font-size: 12px;
-}
-
-main {
-  display: flex;
-  justify-content: center;
 }
 
 .currency-box--items {
@@ -97,4 +100,44 @@ main {
 
 #template {
   display: none;
+}
+
+@media (max-width:768px) {
+  label {
+    font-size: 14px;
+  }
+}
+
+@media (max-width:500px) {
+  label {
+    font-size: 18px;
+  }
+  input {
+    font-size: 22px;
+
+  }
+  
+  .currency-box--items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+  }
+
+  .currency-box {
+    height: auto;
+  }
+
+  .currency-item--value {
+    font-size: 18px;
+  }
+
+  .currency-item--name {
+    font-size: 20px;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }
